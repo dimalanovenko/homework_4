@@ -1,0 +1,544 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.search-bar {
+    padding: 1em;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; 
+    margin-right: 0.5em;
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-bar button:hover {
+    background: #555; 
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: #ccc;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero p {
+    margin: 0.5em 0;
+}
+
+.promotions {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 2em;
+}
+
+.promotions h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.banner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
+}
+
+.banner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-info {
+    padding: 1em;
+    text-align: center;
+}
+
+.banner h3 {
+    margin: 0.5em 0;
+}
+
+.banner p {
+    margin: 0.5em 0 1em 0;
+    color: #555;
+}
+
+.banner-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.banner-button:hover {
+    background: #555;
+}
+
+.categories {
+    padding: 2em 1em;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    width: 220px; 
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.category-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.category-button:hover {
+    background: #555; 
+}
+
+
+.products {
+    padding: 2em;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    width: calc(25% - 2em);
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 0.5em 0;
+}
+
+.product p {
+    color: #b12704;
+    font-weight: bold;
+}
+
+.product button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.product button:hover {
+    background: #555;
+}
+
+.testimonials {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 2em;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonial {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    width: calc(30% - 2em);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+cite {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.newsletter {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 1em;
+}
+
+.newsletter p {
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.newsletter form {
+    display: inline-block;
+    text-align: left;
+}
+
+.newsletter label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.newsletter button:hover {
+    background: #555;
+}
+
+.contact-us {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.contact-us h2 {
+    margin-bottom: 1em;
+}
+
+.contact-us p {
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.contact-us form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-us label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-us button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.contact-us button:hover {
+    background: #555;
+}
+
+.faq {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 2em;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1.5em;
+}
+
+.faq-item h3 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.faq-item p {
+    margin: 0;
+    color: #555;
+}
+
+.blog {
+    padding: 2em;
+    background: #f9f9f9;
+    margin-bottom: 2em;
+}
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    margin: 1em 0 0.5em;
+}
+
+.blog-post p {
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.blog-post .read-more {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.blog-post .read-more:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.product .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.cart-counter {
+    background: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.25em 0.5em;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: calc(100% - 2em);
+    }
+}
